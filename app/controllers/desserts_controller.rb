@@ -9,6 +9,7 @@ class DessertsController < ApplicationController
   def show
     redirect_to root_path and return if not is_logged_in
 
+
     ## CHALLENGE 4: This is my favorite dessert!
     ### Detect whether the dessert the user is viewing
     ### is their favorite_dessert, and add the words
@@ -26,7 +27,7 @@ class DessertsController < ApplicationController
     ### Check my session for my `favorite_dessert_id`
     ### and then render my favorite dessert
     ### AS-IS this will raise an error
-    favorite_dessert_id = 34404 # CHANGE THIS
+    favorite_dessert_id = session[:favorite_dessert_id] # CHANGE THIS
     @dessert = Dessert.find(favorite_dessert_id)
     render 'show'
   end

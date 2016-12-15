@@ -82,7 +82,7 @@ $(function(){
             $("<h2>", {text: "Challenge 2: ✓✓✓"} ),
             $("<h3>", {text: "Success! You have a cookie in your browser!"} ),
             $("<h3>", {text: "You now have access to all pages above"} ),
-            $("<h2>", {text: "Challenge 3 & 4: Can you get Favoriting working?"} ),
+            $("<h2>", {text: "Challenge 3 & 4: ✓✓✓"} ),
             $("<p>", {text: "> Open `app/controllers/desserts_controller.rb for instructions"} )
         );
       }
